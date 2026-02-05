@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{E4DC7FFE-4DB3-863F-BAB9-53801BD581EE}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "GLab",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
