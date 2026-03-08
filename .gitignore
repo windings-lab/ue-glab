@@ -4,3 +4,7 @@ Saved
 Intermediate
 DerivedDataCache
 GLab.uproject.*
+
+*.sln
+.vsconfig
+.vs
