@@ -4,8 +4,8 @@
 #include "Runtime/AIModule/Classes/AIController.h"
 #include "GLab_AIController.generated.h"
 
-UCLASS()
-class GLAB_API AGLab_AIController : public AAIController
+UCLASS(MinimalAPI)
+class AGLab_AIController : public AAIController
 {
 	GENERATED_BODY()
 

@@ -1,21 +1,24 @@
 ﻿#pragma once
 
 #include "CoreMinimal.h"
+#include "AbilitySystemInterface.h"
 #include "GameFramework/PlayerState.h"
 #include "GLab_PlayerState.generated.h"
 
 /**
  *
  */
-UCLASS()
-class GLAB_API AGLab_PlayerState : public APlayerState
+UCLASS(MinimalAPI)
+class AGLab_PlayerState : public APlayerState, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
 public:
 	AGLab_PlayerState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+
 private:
 	UPROPERTY()
-	TObjectPtr<class UAbilitySystemComponent> ASC;
+	TObjectPtr<UAbilitySystemComponent> ASC;
 };

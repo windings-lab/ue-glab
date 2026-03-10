@@ -7,27 +7,20 @@
 #include "GameFramework/Character.h"
 #include "GLab_Character.generated.h"
 
-UCLASS()
-class GLAB_API AGLab_Character : public ACharacter, public IAbilitySystemInterface
+UCLASS(MinimalAPI)
+class AGLab_Character : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	AGLab_Character();
 
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 private:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 
+	UPROPERTY()
+	TObjectPtr<UAbilitySystemComponent> ASC;
 };

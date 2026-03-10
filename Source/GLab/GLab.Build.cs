@@ -10,6 +10,11 @@ public class GLab : ModuleRules
 	
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
+
+		});
+
+		PrivateDependencyModuleNames.AddRange(new string[]
+		{
 			"Core",
 			"CoreUObject",
 			"Engine",
@@ -17,8 +22,6 @@ public class GLab : ModuleRules
 			"GameplayAbilities",
 			"AIModule",
 		});
-
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

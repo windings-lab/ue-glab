@@ -7,8 +7,8 @@
 /**
  *
  */
-UCLASS()
-class GLAB_API AGLab_PlayerController : public APlayerController
+UCLASS(MinimalAPI)
+class AGLab_PlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
