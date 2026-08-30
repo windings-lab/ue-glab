@@ -5,7 +5,7 @@
 AGLab_PlayerState::AGLab_PlayerState(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
-	ASC = CreateDefaultSubobject<UAbilitySystemComponent>(L"Ability System Component");
+	ASC = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("Ability System Component"));
 }
 
 UAbilitySystemComponent* AGLab_PlayerState::GetAbilitySystemComponent() const

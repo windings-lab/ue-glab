@@ -6,7 +6,7 @@ AGLab_Character::AGLab_Character()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	ASC = CreateDefaultSubobject<UAbilitySystemComponent>(L"Ability System Component");
+	ASC = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("Ability System Component"));
 }
 
 void AGLab_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

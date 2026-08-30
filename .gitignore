@@ -4,7 +4,12 @@ Saved
 Intermediate
 DerivedDataCache
 GLab.uproject.*
+Makefile
 
 *.sln
 .vsconfig
 .vs
+.vscode
+*.code-workspace
+
+__pycache__
