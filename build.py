@@ -26,7 +26,7 @@ import time
 from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parent
-UE_ROOT = Path(os.environ.get("UE_ROOT") or PROJECT_DIR.parent.parent / "Source")
+UE_ROOT = Path(os.environ["UE_ROOT"])
 BUILD_SH = UE_ROOT / "Engine/Build/BatchFiles/Linux/Build.sh"
 
 CONFIGS = ["Debug", "DebugGame", "Development", "Test", "Shipping"]
